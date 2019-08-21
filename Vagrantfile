@@ -33,7 +33,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.provision "ansible_local" do |ansible|
       ansible.install_mode = "pip"
       ansible.verbose = "v"
-      ansible.playbook = "ansiblee/playbook.yml"
+      ansible.playbook = "ansible/playbook.yml"
       ansible.raw_arguments = ["--connection=paramiko"]
     end
   end
@@ -63,7 +63,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.provision "ansible_local" do |ansible|
       ansible.install_mode = "pip"
       ansible.verbose = "v"
-      ansible.playbook = "ansible/server-02.yml"
+      ansible.playbook = "ansible/playbook.yml"
       ansible.raw_arguments = ["--connection=paramiko"]
     end
   end

@@ -1,9 +1,0 @@
----
-# tasks file for roles/tomcat
-
-
-   - name: Copy environment variables to remote host.
-     shell: " echo 'export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64' >> ~/.bashrc "
-     envionment:
-             javahome: JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-
